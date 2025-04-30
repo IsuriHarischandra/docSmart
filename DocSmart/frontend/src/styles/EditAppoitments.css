@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* General form container */
+div {
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading */
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Paragraphs */
+  p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  strong {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Input fields */
+  input[type="date"],
+  input[type="time"],
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+  }
+  
+  input[type="date"]:focus,
+  input[type="time"]:focus,
+  input[type="text"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 4px rgba(76, 175, 80, 0.3);
+  }
+  
+  /* Button */
+  button {
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Loading state */
+  p {
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    div {
+      padding: 15px;
+      width: 90%;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    button {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  
+    input[type="date"],
+    input[type="time"],
+    input[type="text"] {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  
